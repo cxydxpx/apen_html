@@ -1,0 +1,20 @@
+body{
+    /*background-color: #d0e4fe;*/
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/*h3 {*/
+    /*color: blue*/
+/*}*/
+
+/**
+css 注释
+ */
+/*p.class*/
+.class
+{
+    color: red;
+    text-align: center;
+}
