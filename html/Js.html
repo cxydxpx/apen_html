@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+    <!--外部JS-->
+    <script src="../javaScript/Demo.js"></script>
+
+</head>
+<body>
+
+<H1>JavaScript 函数</H1>
+
+<p id="mip">显示文字</p>
+
+<button type="button" onclick="showText('周杰伦')">点一下</button>
+<button type="button" onclick="showText('方文山')">点一下</button>
+
+<script>
+
+    function showText(text) {
+        document.getElementById("mip").innerText = getText(text)
+    }
+
+    function getText(text) {
+        return text + "爱情来的太快，就像龙卷风";
+    }
+
+</script>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<H1>JavaScript 消息框</H1>
+
+<button type="button" onclick="showPrompt()">显示消息框</button>
+
+<p id="mConfirm"></p>
+
+<script>
+
+    /**
+     * 提示框
+    function showAlert() {
+        alert("显示提示框 \n 没想到还可以换行");
+    }
+
+    /**
+     * 确认框
+     */
+    function showConfirm() {
+        var bool = confirm("按下按钮");
+
+        if (true == bool){
+            x="你按下了\"确定\"按钮!";
+        }else {
+            x="你按下了\"取消\"按钮!";
+        }
+        document.getElementById("mConfirm").innerHTML = x;
+
+    }
+
+    function showPrompt() {
+        var x;
+        var person=prompt("请输入你的名字","Harry Potter");
+        if (person!=null && person!=""){
+            x="你好 " + person + "! 今天感觉如何?";
+            document.getElementById("mConfirm").innerHTML=x;
+        }
+    }
+
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<H1>JavaScript 条件语句 If ... Else</H1>
+
+<p>如果时间早于20：00，会问候 Good Day</p>
+
+<button type="button" onclick="showDate()">点击事件</button>
+
+<p id="mDateId"></p>
+
+
+<script>
+
+    function showDate() {
+
+        var x = "";
+        // var date = new Date().getHours();
+        //
+        // if (date > 20){
+        //     x = "八点后最好";
+        // }else {
+        //     x = "八点前就不要了";
+        // }
+        var date = new Date().getDay();
+
+        switch (date) {
+            case 0:
+                x = "今天是星期日";
+                break;
+            case 1:
+                x = "今天是星期一";
+                break;
+            case 2:
+                x = "今天是星期二";
+                break;
+            case 3:
+                x = "今天是星期三";
+                break;
+            case 4:
+                x = "今天是星期四";
+                break;
+            case 5:
+                x = "今天是星期五";
+                break;
+            case 6:
+                x = "今天是星期六";
+                break;
+            default:
+                break
+        }
+
+        document.getElementById("mDateId").innerHTML = x;
+    }
+
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<H1>JavaScript 变量</H1>
+
+<p id="mId"></p>
+
+<script>
+
+    var con;
+    con = "What the fuck are you talking about ?"
+    document.write(con);
+    document.write("<br>");
+
+    var value = "No No No ,";
+    document.write(value);
+    document.write("<br>")
+
+
+    var x = 15;
+    y = 25;
+    var z = x + y;
+
+    document.write(x);
+    document.write("<br>")
+    document.write(y);
+    document.write("<br>")
+    document.write(z);
+    document.write("<br>")
+
+    var pai = 3.14;
+    var answer = "answer question";
+    var no = "no no no";
+    document.write(pai);
+    document.write("<br>");
+    document.write(answer);
+    document.write("<br>")
+    document.write(no);
+    document.write("<br>")
+
+    document.getElementById("mId").innerHTML = answer;
+
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h1>JavaScript 语句、注释和代码块</h1>
+<p id="mPid">一个段落</p>
+<div id="mDiv">一个DIV</div>
+
+<button type="button" onclick="updateText()">修改文字</button>
+
+<script>
+    function updateText() {
+        //注释是不会执行的
+        document.getElementById("mPid").innerHTML = "hello joly";
+        /**
+         * JavaScript里是可以多行注释的
+         * @type {string}
+         */
+        document.getElementById("mDiv").innerHTML = "where are you gonging";
+    }
+</script>
+<p>当点击按钮时，段落文字会被改变</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--我的第一个WEB页面-->
+<div>
+    <h1>基础 JavaScript 实例</h1>
+    <p id="pId">我的第一个段落</p>
+    <script>
+        // document.write(new Date());
+        document.getElementById("pId").innerHTML = "段落已修改.";
+    </script>
+    <button type="button" onclick="myClick()">点一下</button>
+</div>
+
+
+</body>
+</html>

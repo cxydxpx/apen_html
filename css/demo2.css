@@ -1,0 +1,75 @@
+body {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.date {
+    text-align: right;
+    color: #550000;
+    margin-right: 20px;
+}
+
+.content {
+    text-align: justify;
+    color: black;
+}
+
+#mId {
+    color: green;
+}
+
+.mClass {
+    color: #550000;
+}
+
+.uppercase {
+    text-indent: 50px;
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+p {
+    color: black;
+    /* 指定字符之间的距离*/
+    letter-spacing: 3px;
+    /**
+    指定行与行之间的距离
+     */
+    line-height: 150%;
+    /**
+    单词之间的间距
+     */
+    word-spacing: 3px;
+    /**
+    对齐
+     */
+    /*vertical-align: bottom;*/
+
+    font-family: "Times New Roman", Times, serif;
+
+    /*字体倾斜*/
+    font-style: italic;
+
+}
+
+a {
+    /*未访问链接*/
+    link: #000000;
+    /* 已访问链接 */
+    visited: #00FF00;
+    /*鼠标移动到链接上*/
+    hover: #FF00FF;
+    /*鼠标点击时*/
+    active: #00FF00;
+}
